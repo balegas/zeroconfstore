@@ -4,6 +4,7 @@
   "description": "A demo of storage service that is advertised over the local network using zeroconf",
   "main": "app.js",
   "scripts": {
+    "start": "babel-node app.js",
     "test": "nyc mocha --recursive --require @babel/register --timeout=5000"
   },
   "repository": {
@@ -24,6 +25,7 @@
   "homepage": "https://github.com/balegas/zeroconfstore#readme",
   "dependencies": {
     "@babel/runtime": "^7.5.5",
+    "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "pouchdb": "^7.1.1",
     "pouchdb-adapter-memory": "^7.1.1"
@@ -31,6 +33,7 @@
   "devDependencies": {
     "@babel/cli": "^7.5.5",
     "@babel/core": "^7.5.5",
+    "@babel/node": "^7.5.5",
     "@babel/plugin-transform-runtime": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
     "@babel/preset-flow": "^7.0.0",
