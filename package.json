@@ -2,10 +2,10 @@
   "name": "zeroconfstore",
   "version": "1.0.0",
   "description": "A demo of storage service that is advertised over the local network using zeroconf",
-  "main": "app.js",
+  "main": "src/app.js",
   "scripts": {
-    "server": "babel-node app.js",
-    "client": "babel-node client.js",
+    "server": "babel-node src/app.js",
+    "client": "babel-node src/client.js",
     "test": "nyc mocha --recursive --require @babel/register --timeout=5000"
   },
   "repository": {

@@ -1,8 +1,8 @@
 // @flow
 
 import assert from 'assert';
-import type {DataSource} from "../../Datasources/DataSource";
-import PouchDBDataSource from "../../Datasources/PouchDB";
+import type {DataSource} from "../../src/Datasources/DataSource";
+import PouchDBDataSource from "../../src/Datasources/PouchDB";
 
 describe('PouchDB datasource CRUD tests', function () {
     describe('put/get', function () {

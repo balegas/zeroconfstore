@@ -1,8 +1,9 @@
 // @flow
-import PouchDB from 'PouchDB';
-import type {DataSource} from "./Datasource";
+import PouchDB from 'pouchdb';
+import memory from 'pouchdb-adapter-memory';
+import type {DataSource} from "./DataSource";
 
-PouchDB.plugin(require('pouchdb-adapter-memory'));
+PouchDB.plugin(memory);
 
 export default class PouchDBDataSource implements DataSource {
 
