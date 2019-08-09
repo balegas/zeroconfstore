@@ -4,7 +4,8 @@
   "description": "A demo of storage service that is advertised over the local network using zeroconf",
   "main": "app.js",
   "scripts": {
-    "start": "babel-node app.js",
+    "server": "babel-node app.js",
+    "client": "babel-node client.js",
     "test": "nyc mocha --recursive --require @babel/register --timeout=5000"
   },
   "repository": {
@@ -29,6 +30,7 @@
     "body-parser": "^1.19.0",
     "bonjour": "^3.5.0",
     "express": "^4.17.1",
+    "nyc": "^14.1.1",
     "pouchdb": "^7.1.1",
     "pouchdb-adapter-memory": "^7.1.1"
   },
@@ -47,7 +49,6 @@
     "flow": "^0.2.3",
     "flow-bin": "^0.104.0",
     "flow-typed": "^2.6.1",
-    "istanbul": "^0.4.5",
     "mocha": "^6.2.0",
     "sinon": "^7.4.1",
     "sinon-chai": "^3.3.0"
